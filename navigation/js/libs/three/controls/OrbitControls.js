@@ -18,7 +18,6 @@ THREE.OrbitControls = function ( object, domElement ) {
 	this.object = object;
 
 	this.domElement = ( domElement !== undefined ) ? domElement : document;
-
 	// Set to false to disable this control
 	this.enabled = true;
 
@@ -652,7 +651,7 @@ THREE.OrbitControls = function ( object, domElement ) {
 
 		if ( scope.enabled === false ) return;
 
-		event.preventDefault();
+		//event.preventDefault();
 
 		if ( event.button === scope.mouseButtons.ORBIT ) {
 
